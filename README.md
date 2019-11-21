@@ -16,3 +16,8 @@ Usage of any script is following:
 bash install_<packagename>.sh
 ```
 and enter `y` any time you really want to do the part of the job -- this is done to avoid e.g. unnecessary re-download of all shit.
+
+## TODOs
+	- add CCP4 installation from provided open link (using [yadisk-direct](https://github.com/wldhx/yadisk-direct))
+	- add Phenix and Buster installation (the same way)
+

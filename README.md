@@ -6,6 +6,7 @@ Has following packages:
   - all XDS-related stuff (excluding Neggia): [link](https://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/Installation)
   - Dirax: [link](https://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/Installation)
   - CrystFEL: [link](http://www.desy.de/~twhite/crystfel/install.html)
+  - Amber: [link](https://ambermd.org/Installation.php)
 
 Tested on Ubuntu 18.04 (WSL under Win10, although I assume it should work for normal Ubuntu, too).
 

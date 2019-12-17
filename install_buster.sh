@@ -8,11 +8,19 @@ if ! [[ "${BUSTER_YADISK}" ]]; then
 fi
 
 
-if [[ $(which yadisk-direct) ]]; then
+if ! [[ $(which yadisk-direct) ]]; then
 	read -r  -n 1 -p "Install yadisk-direct via pip: " 'mainmenuinput' 
 	if [[ "$mainmenuinput" == "y" ]]; then
+		sudo apt-get install python-pip
 		pip install --user yadisk-direct; fi
 fi
+
+if ! [[ $(which curl) ]]; then
+	read -r  -n 1 -p "Install curl: " 'mainmenuinput' 
+	if [[ "$mainmenuinput" == "y" ]]; then
+		sudo apt-get install curl; fi
+fi
+
 
 read -r  -n 1 -p "Download BUSTER from yandex-disk: " 'mainmenuinput' 
 if [[ "$mainmenuinput" == "y" ]]; then

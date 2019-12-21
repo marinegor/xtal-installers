@@ -45,7 +45,7 @@ if [[ "$mainmenuinput" == "y" ]]; then
 	cd phenix || return
 	sudo ./install
 	echo "## Added by install_phenix.sh" >> ~/.bashrc
-	echo "source /usr/local/phenix-1.17.1-3660/phenix_env" >> ~/.bashrc
+	echo "source /usr/local/phenix-1.17.1-3660/phenix_env.sh" >> ~/.bashrc
 else
 	:
 fi

@@ -12,7 +12,8 @@ fi
 
 read -r  -n 1 -p "Install XDS-related packages (xdscc12, xdsstat, etc): " 'mainmenuinput'
 if [[ "$mainmenuinput" = "y" ]]; then
-	wget ftp://turn5.biologie.uni-konstanz.de/pub/linux_bin/get_folder.sh
+	# wget ftp://turn5.biologie.uni-konstanz.de/pub/linux_bin/get_folder.sh
+	wget ftp://strucbio.biologie.uni-konstanz.de/pub/linux_bin/get_folder.sh
 	chmod +x get_folder.sh
 	bash get_folder.sh
 else

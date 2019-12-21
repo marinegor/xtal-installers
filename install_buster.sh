@@ -11,8 +11,8 @@ fi
 if ! [[ $(which yadisk-direct) ]]; then
 	read -r  -n 1 -p "Install yadisk-direct via pip: " 'mainmenuinput' 
 	if [[ "$mainmenuinput" == "y" ]]; then
-		sudo apt-get install python-pip
-		pip install --user yadisk-direct; fi
+		sudo apt-get install python3-pip
+		pip3 install --user wldhx.yadisk-direct; fi
 fi
 
 if ! [[ $(which curl) ]]; then
@@ -26,6 +26,7 @@ read -r  -n 1 -p "Download BUSTER from yandex-disk: " 'mainmenuinput'
 if [[ "$mainmenuinput" == "y" ]]; then
 	curl -L "$(yadisk-direct ${BUSTER_YADISK})" -o "GPhL_BUSTER_snapshot_20191129.linux64.tar"
 	tar -xvf GPhL_BUSTER_snapshot_20191129.linux64.tar
+	mv buster_install BUSTER_snapshot_20191129
 else
 	:
 fi
@@ -34,8 +35,8 @@ fi
 
 read -r  -n 1 -p "Install BUSTER:" 'mainmenuinput' 
 if [[ "$mainmenuinput" == "y" ]]; then
-	mkdir -p BUSTER_snapshot_20191129
 	cd BUSTER_snapshot_20191129 || return
+	tar -xvf GPhL_BUSTER_snapshot_20191129.linux64.tar
 	cmod +x GPhL_BUSTER_snapshot_20191129_install.sh
 	mv install_buster.sh ..
 	./GPhL_BUSTER_snapshot_20191129_install.sh

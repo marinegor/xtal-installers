@@ -19,7 +19,7 @@ if [[ "$mainmenuinput" = "y" ]]; then
 	mv ../get_folder.sh .
 	bash get_folder.sh
 	echo "# Added by install_xdsrelated.sh" >> ~/.bashrc
-	echo "export PATH=\"\$PATH:${PWD}" >> ~/.bashrc
+	echo "export PATH=\"\$PATH:${PWD}\"" >> ~/.bashrc
 else
 	:
 fi

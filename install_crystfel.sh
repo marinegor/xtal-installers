@@ -34,7 +34,7 @@ else
 	:
 fi
 
-read -r  -n 1 -p "Unpack CrystFEL: " 'mainmenuinput'
+read -r  -n 1 -p "Install CrystFEL: " 'mainmenuinput'
 if [[ "$mainmenuinput" = "y" ]]; then
 	mkdir build
 	cd build

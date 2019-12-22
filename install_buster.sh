@@ -32,13 +32,10 @@ else
 fi
 
 
-
 read -r  -n 1 -p "Install BUSTER:" 'mainmenuinput' 
 if [[ "$mainmenuinput" == "y" ]]; then
 	cd BUSTER_snapshot_20191129 || return
-	tar -xvf GPhL_BUSTER_snapshot_20191129.linux64.tar
 	cmod +x GPhL_BUSTER_snapshot_20191129_install.sh
-	mv install_buster.sh ..
 	./GPhL_BUSTER_snapshot_20191129_install.sh
 	echo "## Added by install_buster.sh" >> ~/.bashrc
 	echo "$(pwd)/setup.sh" >> ~/.bashrc

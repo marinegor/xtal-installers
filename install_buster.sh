@@ -38,7 +38,7 @@ if [[ "$mainmenuinput" == "y" ]]; then
 	cmod +x GPhL_BUSTER_snapshot_20191129_install.sh
 	./GPhL_BUSTER_snapshot_20191129_install.sh
 	echo "## Added by install_buster.sh" >> ~/.bashrc
-	echo "$(pwd)/setup.sh" >> ~/.bashrc
+	echo ". $(pwd)/setup.sh" >> ~/.bashrc
 else
 	:
 fi

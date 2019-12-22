@@ -7,7 +7,6 @@ Has following packages:
   - Dirax: [link](https://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/Installation)
   - CrystFEL: [link](http://www.desy.de/~twhite/crystfel/install.html)
   	- and xgandalf: [link](https://stash.desy.de/users/gevorkov/repos/xgandalf/browse)
-  - Amber: [link](https://ambermd.org/Installation.php)
   - :copyright: CCP4 package: [link](http://www.ccp4.ac.uk/download/#os=linux)
   - :copyright: autoBUSTER package: [link](https://www.globalphasing.com/buster/manual/autobuster/manual/autoBUSTER2.html)
   - :copyright: Phenix package: [link](https://www.phenix-online.org/download/)

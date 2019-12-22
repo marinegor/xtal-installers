@@ -12,7 +12,7 @@ Has following packages:
   - :copyright: autoBUSTER package: [link](https://www.globalphasing.com/buster/manual/autobuster/manual/autoBUSTER2.html)
   - :copyright: Phenix package: [link](https://www.phenix-online.org/download/)
  
-Tested on Ubuntu 18.04 (WSL under Win10, although I assume it should work for normal Ubuntu, too).
+Tested on Ubuntu 18.04 (WSL under Win10 and fresh GCP instance running Ubuntu 18.04).
 All software tagget :copyright: is free only for academics, and this gist does not provide full links to their source code.
 
 ## Usage

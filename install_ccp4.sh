@@ -27,6 +27,7 @@ if [[ "$mainmenuinput" == "y" ]]; then
 	./BINARY.setup
 	echo "## Added by install_ccp4.sh" >> ~/.bashrc
 	echo "source $(pwd)/bin/ccp4.setup-sh" >> ~/.bashrc
+	source ~/.bashrc
 else
 	:
 fi

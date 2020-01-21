@@ -7,11 +7,15 @@ if ! [[ "${PHENIX_YADISK}" ]]; then
 	exit 0
 fi
 
+if ! [[ $(which pip3) ]]; then
+	read -r  -n 1 -p "Install python-pip3:" 'mainmenuinput' 
+	if [[ "$mainmenuinput" == "y" ]]; then
+		sudo apt-get install python-pip3; fi
+fi
 
 if ! [[ $(which yadisk-direct) ]]; then
 	read -r  -n 1 -p "Install yadisk-direct via pip: " 'mainmenuinput' 
 	if [[ "$mainmenuinput" == "y" ]]; then
-		sudo apt-get install python3-pip
 		pip3 install --user wldhx.yadisk-direct; fi
 fi
 

@@ -6,15 +6,21 @@ if ! [[ "${CCP4_YADISK}" ]]; then
 	exit 0
 fi
 
+if ! [[ $(which pip3) ]]; then
+	read -r  -n 1 -p "Install python-pip3 " 'mainmenuinput' 
+	if [[ "$mainmenuinput" == "y" ]]; then
+		sudo apt-get install python-pip3; fi
+fi
+
 if ! [[ $(which yadisk-direct) ]]; then
 	read -r  -n 1 -p "Install yadisk-direct via pip: " 'mainmenuinput' 
 	if [[ "$mainmenuinput" == "y" ]]; then
-		pip3 install --user yadisk-direct; fi
+		pip3 install --user wldhx.yadisk-direct; fi
 fi
 
 read -r  -n 1 -p "Download CCP4:" 'mainmenuinput' 
 if [[ "$mainmenuinput" == "y" ]]; then
-	curl -L "$(yadisk-direct ${CCP4_YADISK})" -o "ccp4-7.0.078-shelx-arpwarp-linux64.tar"
+	curl -L "$(yadisk-direct "$CCP4_YADISK")" -o "ccp4-7.0.078-shelx-arpwarp-linux64.tar"
 else
 	:
 fi
